@@ -1,0 +1,9 @@
+### Get all users
+
+GET https://{{host}}:{{port}}/jawrs_demo/api/v1/users
+Accept: application/json
+
+### Get a user
+
+GET https://{{host}}:{{port}}/jawrs_demo/api/v1/users/1
+Accept: application/json
