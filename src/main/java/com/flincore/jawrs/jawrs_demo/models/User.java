@@ -28,11 +28,16 @@ public class User {
     @NotEmpty
     private String paternalLastName;
 
-
     @Column
     private String maternalLastName;
 
-    @OneToMany(fetch = FetchType.LAZY)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinTable(name = "related_users",
+    joinColumns = @JoinColumn(name = "user_id"),
+    inverseJoinColumns = @JoinColumn(name = "user_related_id"))
     private Set<User> related;
+
+    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    private Set<Contact> contacts;
 
 }

@@ -1,9 +1,12 @@
+# HTTPS not supported
 ### Get all users
 
-GET https://{{host}}:{{port}}/jawrs_demo/api/v1/users
+GET http://{{host}}:{{port}}/jawrs_demo/api/v1/users
+Content-Type: application/json
 Accept: application/json
 
 ### Get a user
 
-GET https://{{host}}:{{port}}/jawrs_demo/api/v1/users/1
+GET http://{{host}}:{{port}}/jawrs_demo/api/v1/users/1
+Content-Type: application/json
 Accept: application/json

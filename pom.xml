@@ -30,6 +30,13 @@
             <version>1.18.24</version>
             <scope>compile</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.hibernate.orm</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>6.1.4.Final</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
     <build>
